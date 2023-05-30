@@ -1,6 +1,6 @@
 {
   "name": "@qptickets/common",
-  "version": "1.0.43",
+  "version": "1.0.42",
   "description": "",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
@@ -10,7 +10,7 @@
   "scripts": {
     "prebuild": "del ./build/*",
     "build": "tsc",
-    "pub": "git add . && git commit -m \"Updates\" && npm version patch && npm run build && npm publish"
+    "pub": "git add . && git commit -m \"Updates\" && git push && npm version patch && npm run build && npm publish"
   },
   "keywords": [],
   "author": "",
